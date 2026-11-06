@@ -9,7 +9,7 @@ jobs:
       - uses: actions/checkout@v4
       - name: Install dependencies
         run: |
-          brew install meson ninja lld
+          brew install meson ninja lld libarchive
           which node npm || brew install node
           node --version; npm --version
       - name: Build emulator
